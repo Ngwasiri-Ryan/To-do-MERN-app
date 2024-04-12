@@ -3,6 +3,7 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const TodoModel = require('./Models/Todo')
 const dotenv = require('dotenv')
+const fs = require('fs');
 
 const app = express();
 app.use(cors());
@@ -33,5 +34,12 @@ app.post( '/add', (req, res) => {
 })
 
 app.listen(3001, () => {
-    console.log('Server is running');
+  const message = 'Server is running on port 3001\n';
+  fs.appendFile('server.log', message, err => {
+    if (err) {
+      console.error('Error writing to log file:', err);
+    } else {
+      console.log('Server is running and message logged.');
+    }
+  });
 });

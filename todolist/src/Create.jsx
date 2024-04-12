@@ -10,7 +10,7 @@ const Create = () => {
 
   return (
     <div className='create_form'>
-        <input type='text' placeholder='Enter Task' onChange={() =>setTask(e.target.value)}/>
+        <input type='text' placeholder='Enter Task' onChange={(e) =>setTask(e.target.value)}/>
         <button type='button' onClick={handleAdd}>Add</button>
     </div>
   )

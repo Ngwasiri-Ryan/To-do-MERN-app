@@ -11,7 +11,7 @@ dotenv.config();
 
 
 const uri= 
-"mongodb+srv://Ngwasiri:Ngwasiri_123@cluster0.s60y2a6.mongodb.net/task?retryWrites=true&w=majority&appName=Cluster0"
+"mongodb+srv://Ngwasiri:Ngwasiri_123@cluster0.s60y2a6.mongodb.net/todos?retryWrites=true&w=majority&appName=Cluster0"
 
 async function connect(){
   try{
@@ -24,7 +24,7 @@ async function connect(){
 
 connect();
 
-app.post( '/add', (req, res)=>{
+app.post( '/add', (req, res) => {
     const task = req.body.task;
     TodoModel.create({
       task: task

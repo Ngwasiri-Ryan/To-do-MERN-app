@@ -28,3 +28,33 @@
   color: white;
   cursor: pointer;
 }
+.task{
+  display: flex;
+  align-items: center;
+  width: 420px;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  height: 35px;
+  padding: 5px 4px 5px 4px;
+  margin-top: 2px;
+}
+.checkbox{
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.checkbox .icon{
+  margin-right: 5px;
+  font-size: 15px;
+}
+.task div span{
+  margin: 0px 5px 0px  4px ;
+}
+.task div .icon{
+  cursor: pointer;
+}
+.line_through{
+  text-decoration: line-through;
+}
+

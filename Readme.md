@@ -13,8 +13,8 @@ This Todo app allows users to manage their tasks: adding new ones, marking them 
 Here are some Bash commands you can use to interact with your project:
 
 * **Install nodejs on official website:** https://www.nodejs.org
-  ```bash
-    npm i mongoose
+
+<br/>
 
 * **Create Server side of application in Server path**
   ```bash

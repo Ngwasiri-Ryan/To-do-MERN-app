@@ -1,4 +1,4 @@
-##Todo MERN App
+## Todo MERN App
 
 A Todo MERN application is a to-do list web app built using the MERN stack. MERN stands for MongoDB (database), Express.js (backend framework), React.js (frontend framework), and Node.js (JavaScript runtime environment).
 
